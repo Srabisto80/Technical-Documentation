@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technical Documentation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <style>
+        @media (max-width: 400px) {
+  
+  #navbar {
+      font-size: 10px;
+      margin-right: 80%;
+      border: none;
+  }
+
+  #navbar a {
+      padding: 10px 5px;
+  }
+
+  #main-doc {
+      width: 100%;
+      /* margin-top: 200px; */
+       font-size: 12px;
+       margin-left: 25%;
+  }
+  p {
+      font-size: 12px;
+      line-height: 15px;
+  }
+ 
+  #list {
+      font-size: 12px;
+  }
+  h1 {
+      font-size: 28px;
+  }
+  #bottom a{
+      font-size: 12px;
+  }
+  #bottom  {
+      width: 70%;
+  }
+  header {
+      font-size: 18px;
+  }
+  #robots {
+      font-size: 12px;
+  }
+}
+
+    </style>
+    <!-- User Story #1: I can see a main element with a corresponding id="main-doc", 
+    which contains the page's main content (technical documentation). 
+    User Story #2: Within the #main-doc element, I can see several section 
+    elements, each with a class of main-section. There should be a minimum of 5. 
+    User Story #3: The first element within each .main-section should be a header 
+    element which contains text that describes the topic of that section. 
+    User Story #4: Each section element with the class of main-section should 
+    also have an id that corresponds with the text of each header contained 
+    within it. Any spaces should be replaced with underscores (e.g. The section 
+    that contains the header "JavaScript and Java" should have a corresponding 
+    id="JavaScript_and_Java"). 
+    User Story #5: The .main-section elements should contain at least 10 p 
+    elements total (not each). 
+    User Story #6: The .main-section elements should contain at least 5 code 
+    elements total (not each). 
+    User Story #7: The .main-section elements should contain at least 5 li items 
+    total (not each). 
+    User Story #8: I can see a nav element with a corresponding id="navbar". 
+    User Story #9: The navbar element should contain one header element which 
+    contains text that describes the topic of the technical documentation. 
+    User Story #10: Additionally, the navbar should contain link (a) elements 
+    with the class of nav-link. There should be one for every element with the 
+    class main-section. 
+    User Story #11: The header element in the navbar must come before any link 
+    (a) elements in the navbar. 
+    User Story #12: Each element with the class of nav-link should contain text 
+    that corresponds to the header text within each section (e.g. if you have a 
+    "Hello world" section/header, your navbar should have an element which 
+    contains the text "Hello world"). 
+    User Story #13: When I click on a navbar element, the page should navigate 
+    to the corresponding section of the main-doc element (e.g. If I click on a 
+    nav-link element that contains the text "Hello world", the page navigates to 
+    a section element that has that id and contains the corresponding header. 
+    User Story #14: On regular sized devices (laptops, desktops), the element 
+    with id="navbar" should be shown on the left side of the screen and should 
+    always be visible to the user. 
+    User Story #15: My Technical Documentation page should use at least one media 
+    query. Once you're done, submit the URL to your working project with all its 
+    tests passing. -->
+    <nav id="navbar">
+        <header id="robots">Robots Are The Future!</header>
+        <a class="nav-link" href="#indent1">Definition of Robot</a>
+        <a class="nav-link" href="#indent2">Origin of Word</a>
+        <a class="nav-link" href="#indent3">Early Robots</a>
+        <a class="nav-link" href="#indent4">Remote Controlled Systems</a>
+        <a class="nav-link" href="#indent5">Abilities and Functions</a>
+        <a class="nav-link" href="#indent6">The Future</a>
+    </nav>
+
+    <main id="main-doc">
+        <div id="horizon">
+        <hr>
+        <h1>Robotic World</h1><hr>
+        </div>
+        <div id="indent1"></div>
+        <div id="section1"></div>
+        <section class="main-section" id="Definition_of_Robot" >
+            <header>Definition of Robot</header>
+            <p>A robot is a machine--especially one programmable by a computer--capable of 
+                carrying out a complex series of actions automatically.  A robot can be guided by
+                an external control device, or the control may be embedded within.  Robots may 
+                be constructed to evoke human form, but most robots are task-performing machines, designed with an emphasis on 
+                stark functionality, rather than expressive aesthetics.</p>
+        </section><br>
+        <div id="indent2"></div>
+
+        <div id="section2"></div>
+        <section class="main-section" id="Origin_of_Word" >
+            <header>Origin of Word</header>
+            <p>'Robot' was first applied as a term for artificial automata in the 1920 play RUR by the Czech writer,
+                Karl Capek.  However, Josef capek was named by his brother Karel as the tru inventor
+                of the term robot. The word 'robot' itself was not new, having been in the Slavic language as <i>robota</i> 
+                (forced labor), a term applied to peasants obligated to compulsory service under the feudal system.
+            </p>
+            
+        </section><br>
+        <div id="indent3"></div>
+
+        <div id="section3"></div>
+        <section class="main-section" id="Early_Robots" >
+            
+            <header>Early Robots</header>
+            <p>One of the first humanoid robots, Eric, was exhibited in 1928 at the annual
+                exhibition of the Model Engineers Society in London, where it delivered a speech. The robot's 
+                frame consisted of an aluminium body of armour with elven electromagnets and one motor powered
+                 by a twelve-volt power source. <code>button</code></p>
+            <p>Televox was built in 1926 by Westinghouse Electric Corporation.  It was a cardboard cutout connected to various devices which users could trun on and off.  In 1939, the humanoid robot known as Elektro
+                was debuted at the 1939 New York World's Fair. Japan's first robot, Gakutensoku, was
+                designed and constructed by biologist Makoto Nishimura.</p>
+                <img id="pic" src="./images/davincipic2.png" alt="Davinci's Robot">
+                <p>Leonardo Da Vinci, however, created this robot around 1495.  It was able to sit up,
+                wave it's arms and move its head and jaw.</p>
+            <code></code>
+        </section>
+        
+        <br>
+        <div id="indent4"></div>
+
+        <div id="section4"></div>
+        <section class="main-section" id="Remote_Controlled_Systems" >
+            
+            <header>Remote Controlled Systems</header>
+            <div id="rc-img">
+                <p id="torpedo">The Brennan Torpedo!!!</p>
+                <img src="./images/rc pic.png" alt="Guided Torpedo">
+            </div>
+            <p>Remotely operated vehicles were demonstrated in the late 19th century in the form of several types
+                of remotely controlled torpedoes. The Brennan topedo, invented by Louis Brennan in 1877, was powered by two <code>contra-rotating</code>
+            propellors that were spun by rapidly pulling out wires from drums wound inside the torpedo.  Differential speed on 
+            the wires connected to the shore station allowed the torpedo to be guided to its target, making it "the 
+            world's first <i>practical</i> guided missile."</p>
+        </section><br>
+        <div id="indent5"></div>
+
+        <div id="section5"></div>
+        <section class="main-section" id="Abilities_and_Functions">
+            
+            <header>Abilities and Functions</header>
+            <p>The following list are some of the abilities and functions that robots are and have been created for:</p>
+            <ul id="list">
+                <li> Accept electronic programming</li>
+                <li> Process data or physical perceptions electronically</li>
+                <li> Operate autonomously to some degree, move around, operate physical parts of itselfor physical processes</li>
+                <li> Sense and manipulate their environment</li>
+                <li>Exhibit intelligent behavior, especially bejavior which mimics humans or other animals</li>
+            </ul>
+        </section><br>
+        <div id="indent6"></div>
+
+        <div id="section6"></div>
+        <section class="main-section" id="The_Future" >
+           
+            <header>The Future</header>
+            <p>The future is an exciting thought. There are many reasons why learning <code>html</code> is important today! </p>
+            <p>Robot Operating System is an <code>open-source</code> set of programs being developed at Stanford University, the Massachusetts Institute of Technology and the Technical University of Munich, Germany, among others.</p>
+            <p>ROS provides ways to <code>program</code> a robot's navigation and limbs regardless of the specific hardware involved.</p>
+        </section><br>
+    </main>
+    <footer id="bottom">
+        <p>Thanks to Wikipedia for all the great information!!!</p>
+        <a href="#indent1">Top Of Page</a>
+    </footer>
+</body>
+
+<script src="pcc-userstory-tests.js"></script>
+</html>
